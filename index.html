@@ -4,10 +4,39 @@
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <script src='https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4'></script>
+        <link rel='stylesheet' href='/styles/app.css'>
         <title>Click Fit</title>
     </head>
-    <body class='w-screen min-h-screen overflow-x-hidden bg-black'>
-
+    <body class='w-screen min-h-screen overflow-x-hidden bg-black font-figtree'>
+        <nav class='bg-gray-900 text-white fixed w-full transition-all duration-300 ease-in-out'>
+            <div class='flex flex-row justify-between items-center p-4'>
+                <a href='/' class='text-xl font-bold'>Click<span class='text-blue-400'>Fit</span></a>
+                <div class='hidden md:block'>
+                    <ul class='flex space-x-10'>
+                        <li><a class='hover:text-blue-400 transition-colors duration-300' href='#'>Home</a></li>
+                        <li><a class='hover:text-blue-400 transition-colors duration-300' href='#'>Programs</a></li>
+                        <li><a class='hover:text-blue-400 transition-colors duration-300' href='#'>Nutrition</a></li>
+                        <li><a class='hover:text-blue-400 transition-colors duration-300' href='#'>Community</a></li>
+                    </ul>
+                </div>
+                <div class='md:hidden'>
+                    <button id='menuToggle' class='text-white focus:outline-none'>
+                        <svg class='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                            <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16m-7 6h7'></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Nav -->
+                <div id='mobileNav' class='md:hidden hidden mt-4'>
+                    <ul class='flex flex-col space-y-4 items-end pb-8 px-4'>
+                        <li><a href='#' class='block hover:text-blue-400 transition-colors duration-300'>Home</a></li>
+                        <li><a href='#' class='block hover:text-blue-400 transition-colors duration-300'>Programs</a></li>
+                        <li><a href='#' class='block hover:text-blue-400 transition-colors duration-300'>Nutrition</a></li>
+                        <li><a href='#' class='block hover:text-blue-400 transition-colors duration-300'>Community</a></li>
+                    </ul>
+                </div>
+        </nav>
         <!-- jQuery cdn -->
         <script src='https://code.jquery.com/jquery-3.7.1.min.js' integrity='sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=' crossorigin='anonymous'></script>
         <!-- Scripts -->
