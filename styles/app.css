@@ -3,3 +3,11 @@
 .font-figtree {
   font-family: 'Figtree', sans-serif;
 }
+
+.hero-linear-gradient {
+  background: linear-gradient(rgba(17,24,39,0.8), rgba(17,24,39,0.8));  
+}
+
+.hero-bg {
+    background-image: url('../images/clickfit.webp');
+}
